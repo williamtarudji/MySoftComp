@@ -1,0 +1,58 @@
+@font-face {
+	font-family: 'oswald';
+	src: url('../font/Oswald-Regular.ttf');
+}
+/* Jumbotron */
+.jumbotron{
+	background-image: url('../image/background.png');
+	background-size: cover;
+	position: fixed;
+	height: 100vh;
+	text-align: center;
+}
+
+/* Container */
+.container{
+	font-family: 'oswald';
+	margin-top: 85px;
+}
+
+/* Button */
+.button{
+	margin-top: 75px;
+	border-radius: 10px;
+}
+
+/* Text */
+.text{
+	color: white;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* Mobile Version */
+@media (min-width: 992px) {
+	.animated{
+		-webkit-transition: all 1s ease;
+		-o-transition: all 2s ease;
+		transition: all 1s ease;
+	}
+	.jumbotron .bg-overlay{
+		margin-top: -250px;
+		height: 800px;
+		background: rgba(0, 0, 0, 0);
+	}
+	.jumbotron:hover .bg-overlay{
+		height: 800px;
+		background: rgba(0, 0, 0, 0.7);
+	}
+	.jumbotron{
+		width: 100vw;
+		height: 100vh;
+	}
+	.container{
+		padding-top: 300px;
+	}
+	.button{
+		margin-top: 20px;
+	}
+}
