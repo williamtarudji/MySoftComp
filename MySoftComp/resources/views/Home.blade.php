@@ -13,7 +13,7 @@
 		</div>
 		<div class="Content">
 			<div class="MainLogo">
-				<img src="IMG/LOGO.png">
+				<img src="image/logo.png">
 			</div>
 			<div class="Search">
 				<input type="search" name="Search-input" value="Search . . .">
