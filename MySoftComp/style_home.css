@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'oswald';
+    src: url('../font/Oswald-Regular.ttf');
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar{
+    width: 100%;
+}
+.navbar-brand{
+    margin-left: -50px;
+    margin-top: -13px;
+    margin-bottom: -55px;
+    top: 0;
+    bottom : 0;
+}
+.navbar-brand img{
+    top: 0;
+    bottom: 0;
+    margin-top: -30px;
+    padding-top: 4px;
+    width: 300px;
+    height: 150px;
+}
+.navbar-nav{
+    margin-left: -25px;
+    font-family: 'oswald';
+    font-size: 17px;
+}
+.navbar-nav.text-center{
+    margin-left: -50px;
+}
+.nav-link:hover{
+    color:  darkslategrey !important;
+}
+
+/* Jumbotron */
+.jumbotron{
+    background-image: url('../image/background2.png');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 545px;
+}
+.jumbotron.jumbotron-fluid{
+    height: 700px;
+
+}
+.search-container{
+    padding-top: 100px;
+    width: 490px;
+    display: block;
+    margin: 0 auto;
+}
+
+input#search-bar{
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+&:focus{
+     border: 1px solid #008ABF;
+     transition: 0.35s ease;
+     color: #008ABF;
+&::-webkit-input-placeholder{
+     transition: opacity 0.45s ease;
+     opacity: 0;
+ }
+&::-moz-placeholder {
+     transition: opacity 0.45s ease;
+     opacity: 0;
+ }
+&:-ms-placeholder {
+     transition: opacity 0.45s ease;
+     opacity: 0;
+ }
+}
+}
+
+.search-icon{
+    position: relative;
+    float: right;
+    width: 75px;
+    height: 75px;
+    top: -60px;
+    left: 7;
+}
+
+/* Container */
+.container{
+    color: white;
+    margin-top: 45px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0 , 1);
+}
+.intro{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+/* Featurette */
+.featurette{
+    width: 100%;
+    padding-bottom: 15px;
+
+}
+
+.feat{
+    margin-top: 25px;
+}
+
+.imagefeat img{
+    margin-left: -2px;
+    height: 250px;
+    width: 400px;
+}
+.imagefeat1 img{
+    margin-left: -2px;
+    height: 250px;
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 992px) {
+    .navigasi{
+        position: sticky;
+    }
+    .navbar-brand{
+        margin-right: 50px;
+    }
+    .nav-link{
+        margin-right: 35px;
+    }
+    .jumbotron{
+        background-image: url('../image/background2.png');
+        background-size: cover;
+        height: 600px;
+    }
+    .featurette{
+        padding-top: 10;
+        padding-left: 37px;
+    }
+    .feat{
+        text-align: justify;
+    }
+    .imagefeat{
+        left: 100px;
+    }
+    .imagefeat img{
+        width: 460px;
+        height: 300px;
+    }
+
+    .imagefeat1 img{
+        width: 460px;
+        height: 300px;
+    }
+    .textmid{
+        margin-left: 265px;
+    }
+}
+
+#buttonCompare {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    position: absolute;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 7px 20px;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    top: 50%;
+    border-radius: 10px;
+    color: white;
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.8);
+    border: 5px solid transparent;
+    border-bottom-color: rgba(0,0,0,0.35);
+    background: hsla(148, 100%, 50%, 0.87);
+    cursor: pointer;
+    outline: 0 !important;
+
+    animation: pulse 1s infinite alternate;
+    transition: background 0.4s, border 0.2s, margin 0.2s;
+}
+#buttonCompare:hover {
+    background: hsl(151, 100%, 23%);
+    margin-top: -1px;
+
+    animation: none;
+}
+#buttonCompare:active {
+    border-bottom-width: 0;
+    margin-top: 5px;
+}
+@keyframes pulse {
+    0% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: 6px;
+    }
+}
