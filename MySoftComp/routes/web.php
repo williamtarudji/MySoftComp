@@ -11,15 +11,14 @@
 |
 */
 
-/*
 Route::get('/', function () {
-    return view('Home');
-});
-*/
-Route::get('/', function () {
-    return view('index');
+    return view('home');
 });
 
-Route::get('/home', function () {
-    return view('home');
+Route::get('/compare',function (){
+    return view('compare');
+});
+
+Route::get('/index',function(){
+    return view(index);
 });
