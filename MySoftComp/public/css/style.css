@@ -29,8 +29,9 @@
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
+
 /* Mobile Version */
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
 	.animated{
 		-webkit-transition: all 1s ease;
 		-o-transition: all 2s ease;
@@ -38,11 +39,11 @@
 	}
 	.jumbotron .bg-overlay{
 		margin-top: -250px;
-		height: 800px;
+		height: 2150px;
 		background: rgba(0, 0, 0, 0);
 	}
 	.jumbotron:hover .bg-overlay{
-		height: 800px;
+		height: 2150px;
 		background: rgba(0, 0, 0, 0.7);
 	}
 	.jumbotron{
@@ -50,7 +51,7 @@
 		height: 100vh;
 	}
 	.container{
-		padding-top: 300px;
+		padding-top: 450px;
 	}
 	.button{
 		margin-top: 20px;

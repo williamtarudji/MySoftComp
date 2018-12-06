@@ -28,22 +28,11 @@ body{
     color:  darkslategrey !important;
 }
 
-/* Jumbotron */
-.jumbotron{
-    background-image: url('../image/background2.png');
-    background-size: cover;
-    height: 545px;
-}
-
 /* Container */
 .container{
     color: white;
     margin-top: 45px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0 , 1);
-}
-.intro{
-    margin-top: 20px;
-    font-size: 25px;
 }
 
 /* Featurette */
@@ -58,13 +47,9 @@ body{
 }
 
 .imagefeat img{
+    margin-left: -2px;
     height: 250px;
     width: 380px;   
-}
-.imagefeat1 img{
-    height: 250px;
-    width: 380px;
-    margin-bottom: 15px;
 }
 
 @media (min-width: 992px) {
@@ -77,50 +62,19 @@ body{
     .nav-link{
         margin-right: 35px;
     }
-    .jumbotron{
-        background-image: url('../image/background2.png');
-        background-size: cover;
-        height: 600px;
-    }
     .featurette{
-        margin-top: 55px;
+        padding-top: 0;
+        padding-left: 25px;
     }
     .feat{
+        padding-left: 65px;
         text-align: justify;
-        padding-bottom: 55px;
     }
     .imagefeat{
-        left: 300px;
+        left: 250px;
     }
     .imagefeat img{
-
-        width: 725px;
-        height: 475px;   
+        width: 550px;
+        height: 375px;   
     }
-    
-    .imagefeat1{
-        left: 95px;
-    }
-
-    .imagefeat1 img{
-        width: 725px;
-        height: 475px;
-    }
-
-    .headtext{
-        font-size: 45px;
-    }
-
-    .textright{
-        text-align: left;
-        font-size: 35px;
-        left: 100px;
-    }
-
-    .textleft{
-        text-align: left;
-        font-size: 35px;
-        left: 400px;
-    }
-    
 }
