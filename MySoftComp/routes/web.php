@@ -12,13 +12,22 @@
 */
 
 Route::get('/', function () {
+    return view('index');
+});
+
+Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/compare',function (){
+Route::get('/howto', function () {
+    return view('howto');
+});
+
+Route::get('/view_product', function () {
+    return view('view_product');
+});
+
+Route::get('/compare', function(){
     return view('compare');
 });
 
-Route::get('/index',function(){
-    return view(index);
-});
