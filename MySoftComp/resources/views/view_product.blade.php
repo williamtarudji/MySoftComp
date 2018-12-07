@@ -12,31 +12,22 @@
 @section('main')
     <div class="featurette">
       <div class="row featurette feat">
-        <div class="col-md-6">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi eaque, velit laborum atque error, nam dolorem nobis architecto necessitatibus, sed facilis consequuntur. Exercitationem placeat tenetur illum. Omnis dolores labore eaque!</p>
-        </div>
-        <div class="col-md-6">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi eaque, velit laborum atque error, nam dolorem nobis architecto necessitatibus, sed facilis consequuntur. Exercitationem placeat tenetur illum. Omnis dolores labore eaque!</p>
-        </div>
-        <div class="col-md-6">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi eaque, velit laborum atque error, nam dolorem nobis architecto necessitatibus, sed facilis consequuntur. Exercitationem placeat tenetur illum. Omnis dolores labore eaque!</p>
-        </div>
-        <div class="col-md-6">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi eaque, velit laborum atque error, nam dolorem nobis architecto necessitatibus, sed facilis consequuntur. Exercitationem placeat tenetur illum. Omnis dolores labore eaque!</p>
-        </div>
-        <div class="col-md-6">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi eaque, velit laborum atque error, nam dolorem nobis architecto necessitatibus, sed facilis consequuntur. Exercitationem placeat tenetur illum. Omnis dolores labore eaque!</p>
-        </div>
+        @foreach($software as $soft)
+          <div class="col-md-6">
+            <div class="feat-head">
+              <h2 class="featurette-heading">{{$soft->product_name}}</h2>
+            </div>
+
+            <div class="feat-body">
+              <img src="../image/logo/{{$soft->imagedir}}" alt="" width="105" height="125">
+              <p class="lead">{{$soft->product_description}}</p>
+              <p class="lead"><span>Price : </span>Rp {{$soft->price}}</p>
+              <p class="lead"><span>Size  : </span>{{$soft->file_size}} MB</p>
+              <p class="lead"><span>Platform : </span>{{$soft->platform}}</p>
+              <p class="lead"><span>License : </span>{{$soft->license}}</p>
+            </div>
+          </div>
+        @endforeach
       </div>
     </div>
 @endsection
