@@ -3,6 +3,7 @@
   
 	<head>
         @yield('head')
+        <link rel="icon" type="text/css" href="../image/logo.png">
 		<title>MySoftComp @yield('title')</title>
 	</head>
 
