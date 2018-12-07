@@ -44,7 +44,21 @@ body{
 }
 
 .feat{
-    margin-top: 25px;
+    margin-top: 15px;
+}
+
+.lead{
+    text-align: justify;
+}
+
+.feat-body{
+    padding-top: 15px;
+}
+
+.feat img{
+    margin-left: 145px;
+    margin-top: 9px;
+    margin-bottom: 15px;
 }
 
 @media (min-width: 992px) {
@@ -61,9 +75,19 @@ body{
         padding-top: 0;
         padding-left: 37px;
     }
+
     .feat{
         padding-left: 55px;
         padding-right: 65px;
         text-align: justify;
+    }
+
+    .feat-body{
+        padding-top: 15px;
+    }
+
+    .feat img{
+        margin-left: 355px;
+        margin-bottom: 15px;
     }
 }
