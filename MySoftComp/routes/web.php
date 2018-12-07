@@ -23,11 +23,9 @@ Route::get('/howto', function () {
     return view('howto');
 });
 
-Route::get('/view_product', function () {
-    return view('view_product');
-});
+Route::get('/view_product', 'SoftwareController@getAll');
 
-Route::get('/compare', function(){
+Route::get('/compare', function () {
     return view('compare');
 });
 
