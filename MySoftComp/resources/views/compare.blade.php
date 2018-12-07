@@ -16,9 +16,9 @@
                 Choose Category
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Example</a>
-                <a class="dropdown-item" href="#">AExample</a>
-                <a class="dropdown-item" href="#">Example</a>
+                <a class="dropdown-item" href="#">Code Editor</a>
+                <a class="dropdown-item" href="#">Text Editor</a>
+                <a class="dropdown-item" href="#">Video Editor</a>
             </div>
         </div>
 
@@ -30,16 +30,11 @@
                         <img src="image/logo.png" alt="">
                     </div>
                     <div class="dropcategory">
-                        <div class="dropdown category">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Choose Category
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Example</a>
-                                <a class="dropdown-item" href="#">AExample</a>
-                                <a class="dropdown-item" href="#">Example</a>
+                            <div class="itemBox">
+                                <form action="/" method="GET">
+                                    <input class="itemBox1" type="text" placeholder="Software1..." name="item1">
+                                </form>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -57,16 +52,12 @@
                         <img src="image/logo.png" alt="">
                     </div>
                     <div class="dropcategory">
-                        <div class="dropdown category">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Choose Category
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Example</a>
-                                <a class="dropdown-item" href="#">AExample</a>
-                                <a class="dropdown-item" href="#">Example</a>
+
+                            <div class="itemBox">
+                                <form action="/" method="GET">
+                                    <input class="itemBox2" type="text" placeholder="Software2..." name="item2">
+                                </form>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
