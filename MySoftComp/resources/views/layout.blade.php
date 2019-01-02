@@ -17,7 +17,6 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
        <div class="navbar-nav text-center">
           <a class="nav-item nav-link" href="/home">Home</a>
-          <a class="nav-item nav-link" href="/howto">How To</a>
           <a class="nav-item nav-link" href="/view_product">List</a>
           <a class="nav-item nav-link" href="/compare">Compare</a>
         </div>
