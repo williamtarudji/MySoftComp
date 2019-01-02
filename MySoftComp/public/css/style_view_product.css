@@ -12,22 +12,15 @@ body{
     width: 100%;
 }
 .navbar-brand{
-    margin-left: -50px;
-    margin-top: -13px;
-    margin-bottom: -55px;
-    top: 0;
-    bottom : 0;
+    margin-left: -25px;
 }
 .navbar-brand img{
-    top: 0;
-    bottom: 0;
-    margin-top: -30px;
     padding-top: 4px;
-    width: 300px;
-    height: 150px;
+    width: 150px;
+    height: 50px;
 }
 .navbar-nav{
-    margin-left: -80px;
+    margin-left: -25px;
     font-family: 'oswald';
     font-size: 17px;
 }
@@ -58,26 +51,79 @@ body{
     text-align: justify;
 }
 
-.feat-body{
-    padding-top: 15px;
+.feat img{
+    margin-top: 35px;
 }
 
-.feat img{
-    margin-left: 145px;
-    margin-top: 9px;
-    margin-bottom: 15px;
+.grid{
+    margin-bottom: 35px;
+    margin-left: 25px;
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 280px;
+    height: 200px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+  
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+  
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+  
+/* Style the front side */
+.flip-box-front {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+  
+/* Style the back side */
+.flip-box-back {
+    background-color: #007bff;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-box-back button{
+    margin-top: 75px;
+}
+
+.modal-body img{
+    margin: 15px 0 25px 105px;
 }
 
 @media (min-width: 992px) {
     .navigasi{
         position: sticky;
     }
+    
     .navbar-brand{
         margin-right: 50px;
     }
+
     .nav-link{
         margin-right: 35px;
     }
+
     .featurette{
         padding-top: 0;
         padding-left: 37px;
@@ -93,8 +139,12 @@ body{
         padding-top: 15px;
     }
 
-    .feat img{
-        margin-left: 355px;
-        margin-bottom: 15px;
+    .grid{
+        margin-left: 125px;
+        margin-bottom: 35px;
+    }
+
+    .modal-body img{
+        margin: 15px 0 25px 325px;
     }
 }

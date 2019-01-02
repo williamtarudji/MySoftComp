@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'oswald';
-    src: url('../font/Oswald-Regular.ttf');
+	font-family: 'oswald';
+	src: url('../font/Oswald-Regular.ttf');
 }
 
 body{
@@ -12,22 +12,15 @@ body{
     width: 100%;
 }
 .navbar-brand{
-    margin-left: -50px;
-    margin-top: -13px;
-    margin-bottom: -55px;
-    top: 0;
-    bottom : 0;
+    margin-left: -25px;
 }
 .navbar-brand img{
-    top: 0;
-    bottom: 0;
-    margin-top: -30px;
     padding-top: 4px;
-    width: 300px;
-    height: 150px;
+    width: 150px;
+    height: 50px;
 }
 .navbar-nav{
-    margin-left: -80px;
+    margin-left: -25px;
     font-family: 'oswald';
     font-size: 17px;
 }
@@ -39,7 +32,6 @@ body{
 .jumbotron{
     background-image: url('../image/background2.png');
     background-size: cover;
-    background-attachment: fixed;
     height: 545px;
 }
 
@@ -49,6 +41,12 @@ body{
     margin-top: 45px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0 , 1);
 }
+
+.container button{
+    margin-top: 125px;
+    margin-left: 120px;
+}
+
 .intro{
     margin-top: 20px;
     font-size: 25px;
@@ -67,48 +65,12 @@ body{
 
 .imagefeat img{
     height: 250px;
-    width: 380px;
+    width: 328px;   
 }
 .imagefeat1 img{
     height: 250px;
-    width: 380px;
+    width: 328px;
     margin-bottom: 15px;
-}
-#buttonCompare{
-    margin-left: -20px;
-}
-#buttonCompare>a {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-    position: absolute;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    padding: 7px 20px;
-    left: 50%;
-    width: 200px;
-    margin-left: -100px;
-    top: 50%;
-    border-radius: 10px;
-    color: white;
-    text-shadow: -1px -1px 1px rgba(0,0,0,0.8);
-    border: 5px solid transparent;
-    border-bottom-color: rgba(0,0,0,0.35);
-    background: hsla(148, 100%, 50%, 0.87);
-    cursor: pointer;
-    outline: 0 !important;
-    text-decoration: none;
-
-    animation: pulse 1s infinite alternate;
-    transition: background 0.4s, border 0.2s, margin 0.2s;
-}
-#buttonCompare>a:hover {
-    background: hsl(151, 100%, 23%);
-    margin-top: -1px;
-
-    animation: none;
-}
-#buttonCompare>a:active {
-    border-bottom-width: 0;
-    margin-top: 5px;
 }
 
 @media (min-width: 992px) {
@@ -124,34 +86,36 @@ body{
     .jumbotron{
         background-image: url('../image/background2.png');
         background-size: cover;
-        height: 700px;
-        margin-bottom: 90px;
+        height: 600px;
     }
     .featurette{
-        margin-top: 0px;
-        padding-top: 0px;
+        margin-top: 55px;
     }
     .feat{
         text-align: justify;
         padding-bottom: 55px;
     }
     .imagefeat{
-        left: 150px;
+        left: 300px;
     }
     .imagefeat img{
-        width: 650px;
-        height: 475px;
-        border: solid 1px;
-    }
 
+        width: 725px;
+        height: 475px;   
+    }
+    
     .imagefeat1{
         left: 95px;
     }
 
     .imagefeat1 img{
-        width: 650px;
+        width: 725px;
         height: 475px;
-        border: solid 1px;
+    }
+
+    .container button{
+        margin-top: 250px;
+        margin-left: 500px;
     }
 
     .headtext{
@@ -167,7 +131,7 @@ body{
     .textleft{
         text-align: left;
         font-size: 35px;
-        left: 300px;
+        left: 400px;
     }
-
+    
 }

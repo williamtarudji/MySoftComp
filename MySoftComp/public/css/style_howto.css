@@ -12,22 +12,15 @@ body{
     width: 100%;
 }
 .navbar-brand{
-    margin-left: -50px;
-    margin-top: -13px;
-    margin-bottom: -55px;
-    top: 0;
-    bottom : 0;
+    margin-left: -25px;
 }
 .navbar-brand img{
-    top: 0;
-    bottom: 0;
-    margin-top: -30px;
     padding-top: 4px;
-    width: 300px;
-    height: 150px;
+    width: 150px;
+    height: 50px;
 }
 .navbar-nav{
-    margin-left: -80px;
+    margin-left: -25px;
     font-family: 'oswald';
     font-size: 17px;
 }
@@ -70,45 +63,18 @@ body{
         margin-right: 35px;
     }
     .featurette{
-        margin-top: 0px;
-        padding-top: 0px;
+        padding-top: 0;
+        padding-left: 25px;
     }
     .feat{
+        padding-left: 65px;
         text-align: justify;
-        padding-bottom: 55px;
     }
     .imagefeat{
-        left: 150px;
+        left: 250px;
     }
     .imagefeat img{
-        width: 650px;
-        height: 475px;
-        border: solid 1px;
-    }
-
-    .imagefeat1{
-        left: 95px;
-    }
-
-    .imagefeat1 img{
-        width: 650px;
-        height: 475px;
-        border: solid 1px;
-    }
-
-    .headtext{
-        font-size: 45px;
-    }
-
-    .textright{
-        text-align: left;
-        font-size: 35px;
-        left: 100px;
-    }
-
-    .textleft{
-        text-align: left;
-        font-size: 35px;
-        left: 300px;
+        width: 550px;
+        height: 375px;   
     }
 }
