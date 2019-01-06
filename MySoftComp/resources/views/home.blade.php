@@ -26,7 +26,7 @@
   <div class="featurette">
     <div class="row featurette feat">
       <div class="col-md-5 textright">
-        <h2 class="featurette-heading headtext">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+        <h2 class="featurette-heading headtext">Membantu anda dalam mencari rekomendasi software.  <span class="text-muted">Memilih software yang cocok untuk anda.</span></h2>
         <p class="lead textright">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
       <div class="col-md-4 imagefeat">
